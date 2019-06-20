@@ -41,7 +41,7 @@ export default ({
         <Col xs={12} md={12}>
           <span className="text-secondary" style={{ fontSize: 12 }}>{`${
             availableAttributes["color"].length
-          } color availabe`}</span>
+            } color availabe`}</span>
           <ColorSelector
             attributeSelector={attributeSelector}
             Color={availableAttributes["color"]}
@@ -51,7 +51,7 @@ export default ({
         <Col xs={12} md={12} className=" p10">
           <span className="text-secondary" style={{ fontSize: 12 }}>{`${
             availableAttributes["storage"].length
-          } storage availabe`}</span>
+            } storage availabe`}</span>
           <StorageSelector
             attributeSelector={attributeSelector}
             Storage={availableAttributes["storage"]}

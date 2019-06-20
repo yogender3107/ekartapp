@@ -5,7 +5,7 @@ import ProductDetailScreen from "./ProductDetailScreen";
 
 //Main Product Detail Component
 class ProductDetail extends React.Component {
-  
+
   //This lifecycle method is used to fetch the data with API
   componentDidMount() {
     this.props.productDetailFetch();
@@ -13,7 +13,7 @@ class ProductDetail extends React.Component {
 
   //Function used for updating store by the child component(ColorSelector and StorageSelector)
   attributeSelector = (key, id) => {
-    this.props.setSelectedAttribute(key,id)
+    this.props.setSelectedAttribute(key, id)
   };
 
   render() {
@@ -30,9 +30,9 @@ class ProductDetail extends React.Component {
 
 //mapping of application state with component props
 function mapStateToProps(state) {
-  let productDetail=state.productDetail ? state.productDetail : {};
+  let productDetail = state.productDetail ? state.productDetail : {};
   return {
-      ...productDetail
+    ...productDetail
   }
 }
 

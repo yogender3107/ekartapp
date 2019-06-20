@@ -16,7 +16,7 @@ const store = createStore(
   //root Reducer is placed here
   reducers,
   //initializing state
-  { },
+  {},
   //applying middleware
   applyMiddleware(reduxThunk)
 )
